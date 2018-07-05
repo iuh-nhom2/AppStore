@@ -19,7 +19,7 @@ import Background5 from '../media/br5.jpg';
 import Background6 from '../media/br8.jpg';
 
 const {height,width} = Dimensions.get('window');
-type Props ={};
+
 export default class Welcome extends Component{
 	constructor(props){
 		super(props);

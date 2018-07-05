@@ -54,6 +54,8 @@ export const HomeStack = StackNavigator({
 export const ShopStack = StackNavigator({
 	ManHinh_Customer: {
 		screen: Customer,
+		height:0,
+		header:null
 	},
 	ManHinh_Majorview: {
 		screen: Major,
@@ -111,6 +113,7 @@ export const Tabbar = TabNavigator({
 
 			header: null,
 			tabBarVisible: false,
+			height:0
 
 		}
 
@@ -120,7 +123,7 @@ export const Tabbar = TabNavigator({
 		navigationOptions: {
 
 			header: null,
-
+			height:0
 
 		}
 	},

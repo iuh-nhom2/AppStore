@@ -56,7 +56,7 @@ export default class Major extends Component {
     render() {
         return (
             <Drawer tapToClose={true}
-                openDrawerOffset={0.3}
+                openDrawerOffset={0.2}
                 ref={(ref) => this._drawer = ref}
                 content={
                     <View style={{ flex: 1 }}>
@@ -86,7 +86,10 @@ export default class Major extends Component {
                             <View style={{ alignItems: 'center' }}>
                                 <Image source={loggmt} style={{ width: 150, height: 150 }} />
                             </View>
-                            <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: 5 }}>
+                            <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: 5 }}
+                                onPress={()=>{this.props.navigation.navigate('User')}}
+
+                            >
                                 <Image source={user} style={{ width: 50, height: 50 }} />
                                 <Text style={{ fontFamily: 'arial', color: '#fff', textAlign: 'center', fontSize: 20, fontWeight: 'bold' }}>Information off user</Text>
                             </TouchableOpacity>
@@ -98,7 +101,9 @@ export default class Major extends Component {
                                 <Image source={huongdanicon} style={{ width: 50, height: 50 }} />
                                 <Text style={{ fontFamily: 'arial', color: '#fff', textAlign: 'center', fontSize: 20, fontWeight: 'bold' }}>Guide</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: 5 }}>
+                            <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', padding: 5 }} 
+                                onPress={()=>{this.props.navigation.navigate('ABout')}}
+                            >
                                 <Image source={abouticon} style={{ width: 50, height: 50 }} />
                                 <Text style={{ fontFamily: 'arial', color: '#fff', textAlign: 'center', fontSize: 20, fontWeight: 'bold' }}>About</Text>
                             </TouchableOpacity>
@@ -169,6 +174,7 @@ export default class Major extends Component {
                             </View>
                             <View style={styles.styleviewbutton} >
                                 <TouchableOpacity onPress={() => { this.props.navigation.navigate('ManHinh_ListReparation') }}>
+                                    
                                     <Text style={{ fontFamily: 'arial' }}>One new Order</Text>
                                 </TouchableOpacity>
                             </View>

@@ -149,7 +149,7 @@ export default class OrderReparation extends Component {
             refreshing: true,
             isfreshing: false,
             isSearch: false
-
+            
         });
         fetch("http://172.16.1.15/serverMobile/getOrderReparation.php?page=" + 1)
             .then((response) => response.json())
