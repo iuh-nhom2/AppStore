@@ -193,7 +193,7 @@ export default class OrderReparation extends Component {
                     <TouchableOpacity onPress={() => { this.props.navigation.navigate('Home') }} style={{ padding: 10 }} >
 
                         <Image source={Backicon} style={{ width: 40, height: 40 }} />
-
+                        
                     </TouchableOpacity>
                     <Text style={styles.textHeader}>Order Paration:</Text>
                     <View style={{
@@ -228,7 +228,7 @@ export default class OrderReparation extends Component {
                         <View>
 
                             <View style={styles.container}>
-                                <View style={{ height: 40, width: '100%', backgroundColor: '#333333', borderRadius: 5, alignItems: 'center', justifyContent: 'center' }}>
+                                <View style={{ height: 40, width: '100%', backgroundColor: '#330000', borderRadius: 5, alignItems: 'center', justifyContent: 'center' }}>
 
                                     <Text style={styles.textBody}>{row.Nominativo}</Text>
                                 </View>
@@ -258,6 +258,7 @@ export default class OrderReparation extends Component {
                                             </TouchableOpacity>
                                             <TouchableOpacity >
                                                 <Image source={EditPara} style={{ width: 35, height: 35, margin: 10 }} />
+                                                
                                             </TouchableOpacity>
                                             <TouchableOpacity onPress={() => this.deleteOrder(row.ID)}>
                                                 <Image source={DeletePara} style={{ width: 35, height: 35, margin: 10 }} />
@@ -308,7 +309,8 @@ const styles = StyleSheet.create({
     },
     textHeader: {
         color: '#336633',
-        fontFamily: 'arial'
+        fontFamily: 'arial',
+        fontWeight:'bold'
     },
     stylebody: {
 
